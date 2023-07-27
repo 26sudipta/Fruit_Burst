@@ -4,8 +4,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
 
@@ -70,7 +72,7 @@
       <button class="rounded-md bg-[#F85559] p-3 text-lg font-medium">shop now</button>
     </div>
 
-    <div class="w-4/5 flex absolute -bottom-20 left-[10%] bg-white rounded-2xl shadow-md">
+    <div class="w-4/5 flex relative -top-20 left-[10%] bg-white rounded-2xl shadow-md">
       <div class="w-1/5 flex flex-col p-4">
         <img src="images/fruit1.png" alt="" class=" h-36 object-contain">
         <h1 class="text-center">Strawberry</h1>
@@ -94,6 +96,61 @@
       
 
       
+    </div>
+
+  </section>
+
+  <section class="w-[96%] mx-auto">
+    <div class="flex">
+      <div class="w-1/2">
+        <h1 class="text-4xl font-bold">Deal of the day</h1>
+        <h5 class="text-xl font-normal">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</h5>
+      </div>
+      <div class="w-1/2">
+        <div class="flex gap-5 w-fit mx-auto font-bold">
+          <div>
+            <span class="countdown font-mono text-4xl">
+              <span style="--value:15;"></span>
+            </span>
+            days
+          </div> 
+          <div>
+            <span class="countdown font-mono text-4xl">
+              <span style="--value:10;"></span>
+            </span>
+            hours
+          </div> 
+          <div>
+            <span class="countdown font-mono text-4xl">
+              <span style="--value:24;"></span>
+            </span>
+            min
+          </div> 
+          <div>
+            <span class="countdown font-mono text-4xl">
+              <span style="--value:3;"></span>
+            </span>
+            sec
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="w-1/4 rating-card">
+        <img src="images/fruit6.png" alt="">
+        <h1>12.90$ - 18.85$</h1>
+        <hr>
+        <h1>Apples</h1>
+        <div class="rating text-[#bfbdb4] text-xl my-5">
+          <span class="fa fa-star m-2 text-[#ffd700]"></span>
+          <span class="fa fa-star m-2 text-[#ffd700]"></span>
+          <span class="fa fa-star m-2 text-[#ffd700]"></span>
+          <span class="fa fa-star m-2"></span>
+          <span class="fa fa-star m-2"></span>
+        </div>
+          
+      </div>
     </div>
   </section>
 </body>
