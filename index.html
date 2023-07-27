@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css" />
   <title>Document</title>
@@ -25,8 +26,9 @@
       <h1 class="h-fit pl-4 text-4xl">Fruit Burst</h1>
     </div>
 
-    <div class="flex justify-end">
-      <input type="text" name="" id="" placeholder="search Here" class="rounded-full mr-5 p-3 text-xl" />
+    <div class="flex justify-end relative items-center">
+      <input type="text" name="" id="" placeholder="search Here" class="rounded-full mr-5 p-3 text-xl relative" />
+      <i class="fa-solid fa-magnifying-glass absolute right-10 text-xl" style="color: #646973bd;"></i>
     </div>
   </nav>
 
@@ -113,8 +115,8 @@
           2000 years old.
         </h5>
       </div>
-      <div class="w-1/2">
-        <div class="flex gap-5 w-fit mx-auto font-bold">
+      <div class="w-1/2 flex">
+        <div class="flex gap-5 w-fit mx-auto font-bold items-center">
           <div>
             <span class="countdown font-mono text-4xl">
               <span style="--value: 15"></span>
@@ -339,7 +341,13 @@
         </dialog>
       </div>
     </div>
+
+    <div class="w-full flex justify-center">
+      <button class="w-fit rounded-md bg-[#F85559] py-3 px-5 text-white text-3xl font-bold text-center">Shop All</button>
+    </div>
+   
   </section>
+  
 </body>
 
 </html>
