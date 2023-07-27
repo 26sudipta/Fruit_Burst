@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css"/>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
@@ -93,9 +93,9 @@
         <img src="images/fruit5.png" alt="" class=" h-36 object-contain">
         <h1 class="text-center">Mango</h1>
       </div>
-      
 
-      
+
+
     </div>
 
   </section>
@@ -104,7 +104,8 @@
     <div class="flex">
       <div class="w-1/2">
         <h1 class="text-4xl font-bold">Deal of the day</h1>
-        <h5 class="text-xl font-normal">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</h5>
+        <h5 class="text-xl font-normal">Contrary to popular belief, is not simply random text. It has roots in a piece
+          of classical Latin literature from 45 BC, making it over 2000 years old.</h5>
       </div>
       <div class="w-1/2">
         <div class="flex gap-5 w-fit mx-auto font-bold">
@@ -113,19 +114,19 @@
               <span style="--value:15;"></span>
             </span>
             days
-          </div> 
+          </div>
           <div>
             <span class="countdown font-mono text-4xl">
               <span style="--value:10;"></span>
             </span>
             hours
-          </div> 
+          </div>
           <div>
             <span class="countdown font-mono text-4xl">
               <span style="--value:24;"></span>
             </span>
             min
-          </div> 
+          </div>
           <div>
             <span class="countdown font-mono text-4xl">
               <span style="--value:3;"></span>
@@ -136,23 +137,46 @@
       </div>
     </div>
 
-    <div>
-      <div class="w-1/4 rating-card">
-        <img src="images/fruit6.png" alt="">
-        <h1>12.90$ - 18.85$</h1>
-        <hr>
-        <h1>Apples</h1>
-        <div class="rating text-[#bfbdb4] text-xl my-5">
-          <span class="fa fa-star m-2 text-[#ffd700]"></span>
-          <span class="fa fa-star m-2 text-[#ffd700]"></span>
-          <span class="fa fa-star m-2 text-[#ffd700]"></span>
-          <span class="fa fa-star m-2"></span>
-          <span class="fa fa-star m-2"></span>
+    <div class="flex">
+      <div class="w-1/4 rating-card flex flex-col text-center">
+        <div class="flex justify-center m-6"><img src="images/fruit6.png" alt=""></div>
+        <h1 class="text-xl font-bold">12.90$ - 18.85$</h1>
+        <hr class="w-4/5 self-center">
+        <h1 class="my-2">Apples</h1>
+        <div class="w-full text-[#bfbdb4] text-xl my-3">
+          <span class="fa fa-star text-[#ffd700]"></span>
+          <span class="fa fa-star text-[#ffd700]"></span>
+          <span class="fa fa-star text-[#ffd700]"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
         </div>
-          
+        <!-- Open the modal using ID.showModal() method -->
+
+        <a onclick="my_modal_1.showModal()" class="text-[#F85559] text-lg">Details</a>
+        <dialog id="my_modal_1" class="modal">
+          <form method="dialog" class="modal-box">
+            <div class=" w-full rating-card flex flex-col text-center">
+              <div class="flex justify-center"><img src="images/fruit6.png" alt=""></div>
+              <h1 class="my-3">Apples</h1>
+              <h1>Professional employees are there for you to pick the most amazing and fresh fruits.</h1>
+              <div class="w-full text-[#bfbdb4] text-xl my-5">
+                <span class="fa fa-star text-[#ffd700]"></span>
+                <span class="fa fa-star text-[#ffd700]"></span>
+                <span class="fa fa-star text-[#ffd700]"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+            </div>
+            <div class="modal-action justify-center">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="rounded-md bg-[#ffffff] p-3 text-lg font-medium text-[#F85559] border-[#F85559]">Close</button>
+              <button class="rounded-md bg-[#F85559] p-3 text-lg font-medium text-white">Buy Now</button>
+            </div>
+          </form>
+        </dialog>
+
       </div>
     </div>
   </section>
 </body>
-
 </html>
